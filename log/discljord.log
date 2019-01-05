@@ -1,0 +1,2027 @@
+2018-09-26 15:09:00.936 | ERROR | clojure-agent-send-off-pool-7 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands "!" "!disconnect"
+ ("disconnect"
+  (when (= id owner)
+    "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 267}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 15:09:16.447 | ERROR | clojure-agent-send-off-pool-7 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands "!" "!disconnect"
+ ("disconnect"
+  (when (= id owner)
+    "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 272}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 15:09:34.013 | ERROR | clojure-agent-send-off-pool-7 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands "!" "!disconnect"
+ ("disconnect"
+  (when (= id owner)
+    "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 277}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 15:14:19.497 | ERROR | clojure-agent-send-off-pool-8 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands "!" "!disconnect"
+ ("disconnect"
+  (when (= id owner)
+    "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 297}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 15:49:56.121 | ERROR | clojure-agent-send-off-pool-17 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands prefix content
+  (#"disconnect"
+    (when (= id owner)
+      "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 1011}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 15:53:07.757 | ERROR | clojure-agent-send-off-pool-17 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands prefix content
+  (#"disconnect"
+    (when (= id owner)
+      "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 1065}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 15:54:27.839 | ERROR | clojure-agent-send-off-pool-17 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands prefix content
+  (#"disconnect"
+    (when (= id owner)
+      "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 1082}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 16:26:13.956 | ERROR | clojure-agent-send-off-pool-22 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (commands prefix content
+  (#"disconnect"
+    (when (= id owner)
+      "Goodbye!")))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 1181}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 17:31:19.521 | ERROR | clojure-agent-send-off-pool-28 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (regex-cond
+    content
+    ((str "^" G__16694 #"help") [] "Help")
+    :default
+    "Hello, world!"), :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 1380}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 17:31:33.041 | ERROR | clojure-agent-send-off-pool-28 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (regex-cond
+    content
+    ((str "^" G__16694 #"help") [] "Help")
+    :default
+    "Hello, world!"), :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 1381}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 17:33:41.404 | ERROR | clojure-agent-send-off-pool-28 | clojure.tools.nrepl.server | Unhandled REPL handler exception processing message {:op macroexpand, :expander macroexpand-1, :code (regex-cond "hell"
+  (#"help" []
+    (println "Hello"))
+  :default
+  (println "World!"))
+, :ns alexis-texas.core, :display-namespaces tidy, :session 2e670c8e-7c33-478f-88d3-c99e82ae8875, :id 1435}
+java.lang.NullPointerException
+	at cider.nrepl.middleware.stacktrace$analyze_cause$fn__12097.invoke(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invokeStatic(stacktrace.clj:293)
+	at cider.nrepl.middleware.stacktrace$analyze_cause.invoke(stacktrace.clj:279)
+	at cider.nrepl.middleware.stacktrace$analyze_causes$fn__12105.invoke(stacktrace.clj:305)
+	at clojure.core$comp$fn__5529.invoke(core.clj:2561)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.core$seq__5124.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__5587.invoke(core.clj:2738)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core$dorun.invokeStatic(core.clj:3134)
+	at clojure.core$doall.invokeStatic(core.clj:3140)
+	at clojure.walk$walk.invokeStatic(walk.clj:46)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2745)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:528)
+	at clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:44)
+	at clojure.core$vec.invokeStatic(core.clj:377)
+	at clojure.walk$walk.invokeStatic(walk.clj:45)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$postwalk.invoke(walk.clj:52)
+	at clojure.core$partial$fn__5561.invoke(core.clj:2616)
+	at clojure.core$map$fn__5587.invoke(core.clj:2747)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.Cons.next(Cons.java:39)
+	at clojure.lang.RT.next(RT.java:706)
+	at clojure.core$next__5108.invokeStatic(core.clj:64)
+	at clojure.core.protocols$fn__7852.invokeStatic(protocols.clj:169)
+	at clojure.core.protocols$fn__7852.invoke(protocols.clj:124)
+	at clojure.core.protocols$fn__7807$G__7802__7816.invoke(protocols.clj:19)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+	at clojure.core.protocols$fn__7835.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__7835.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__7781$G__7776__7794.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6748)
+	at clojure.core$into.invokeStatic(core.clj:6815)
+	at clojure.walk$walk.invokeStatic(walk.clj:49)
+	at clojure.walk$postwalk.invokeStatic(walk.clj:52)
+	at clojure.walk$stringify_keys.invokeStatic(walk.clj:101)
+	at clojure.walk$stringify_keys.invoke(walk.clj:101)
+	at clojure.tools.nrepl.transport.FnTransport.send(transport.clj:28)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invokeStatic(macroexpand.clj:222)
+	at cider.nrepl.middleware.macroexpand$handle_macroexpand.invoke(macroexpand.clj:221)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at cider.nrepl$wrap_macroexpand$fn__7642.invoke(nrepl.clj:295)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.middleware.session$session$fn__2335.invoke(session.clj:192)
+	at clojure.tools.nrepl.middleware$wrap_conj_descriptor$fn__1984.invoke(middleware.clj:22)
+	at clojure.tools.nrepl.server$handle_STAR_.invokeStatic(server.clj:19)
+	at clojure.tools.nrepl.server$handle_STAR_.invoke(server.clj:16)
+	at clojure.tools.nrepl.server$handle$fn__2408.invoke(server.clj:28)
+	at clojure.core$binding_conveyor_fn$fn__5476.invoke(core.clj:2022)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-26 17:39:32.532 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-09-26 18:22:10.538 | DEBUG | async-dispatch-6 | discljord.connections | Shard disconnected from Discord
+2018-09-26 18:22:10.539 | DEBUG | async-dispatch-6 | discljord.connections | Stop code 1001 encountered with message:
+	
+2018-09-26 18:22:10.539 | DEBUG | async-dispatch-6 | discljord.connections | Reconnecting
+2018-09-26 18:22:10.539 | DEBUG | async-dispatch-6 | discljord.connections | Connecting shard [0 1]
+2018-09-26 18:22:51.779 | DEBUG | async-dispatch-1 | discljord.connections | Shard disconnected from Discord
+2018-09-26 18:22:51.780 | DEBUG | async-dispatch-1 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-09-26 18:22:51.780 | DEBUG | async-dispatch-1 | discljord.connections | Reconnecting
+2018-09-26 18:22:51.780 | DEBUG | async-dispatch-1 | discljord.connections | Connecting shard [0 1]
+2018-09-26 18:26:37.388 | DEBUG | async-dispatch-8 | discljord.connections | Shard disconnected from Discord
+2018-09-26 18:26:37.389 | DEBUG | async-dispatch-8 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-09-26 18:26:37.389 | DEBUG | async-dispatch-8 | discljord.connections | Reconnecting
+2018-09-26 18:26:37.389 | DEBUG | async-dispatch-8 | discljord.connections | Connecting shard [0 1]
+2018-09-26 18:31:07.979 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-09-26 18:32:30.640 | DEBUG | async-dispatch-4 | discljord.connections | Shard disconnected from Discord
+2018-09-26 18:32:30.641 | DEBUG | async-dispatch-4 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-09-26 18:37:01.901 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-09-26 18:37:32.375 | DEBUG | async-dispatch-1 | discljord.connections | Shard disconnected from Discord
+2018-09-26 18:37:32.378 | DEBUG | async-dispatch-1 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-09-26 19:35:51.833 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-09-26 19:36:25.876 | DEBUG | async-dispatch-1 | discljord.connections | Shard disconnected from Discord
+2018-09-26 19:36:25.878 | DEBUG | async-dispatch-1 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-02 16:29:43.242 | DEBUG | async-thread-macro-1 | discljord.connections | Connecting shard [0 1]
+2018-10-02 16:30:16.554 | DEBUG | async-thread-macro-1 | discljord.connections | Connecting shard [0 1]
+2018-10-02 16:30:45.048 | DEBUG | async-dispatch-2 | discljord.connections | Shard disconnected from Discord
+2018-10-02 16:30:45.048 | DEBUG | async-dispatch-2 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-02 16:49:43.669 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-02 16:51:27.035 | DEBUG | async-dispatch-7 | discljord.connections | Shard disconnected from Discord
+2018-10-02 16:51:27.036 | DEBUG | async-dispatch-7 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-02 16:53:27.357 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-02 16:54:43.192 | DEBUG | async-dispatch-8 | discljord.connections | Shard disconnected from Discord
+2018-10-02 16:54:43.193 | DEBUG | async-dispatch-8 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-03 17:11:15.368 | DEBUG | async-thread-macro-4 | discljord.connections | Connecting shard [0 1]
+2018-10-03 17:11:15.942 | TRACE | async-thread-macro-5 | discljord.connections | Successfully connected to Discord
+2018-10-03 17:20:04.045 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 17:20:04.327 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 17:29:43.268 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-03 17:29:43.306 | DEBUG | async-dispatch-7 | discljord.connections | Shard disconnected from Discord
+2018-10-03 17:29:43.306 | DEBUG | async-dispatch-7 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-03 17:30:29.807 | DEBUG | async-thread-macro-5 | discljord.connections | Connecting shard [0 1]
+2018-10-03 17:30:30.000 | TRACE | async-thread-macro-1 | discljord.connections | Successfully connected to Discord
+2018-10-03 17:30:30.002 | ERROR | async-dispatch-4 | discljord.connections | Exception caught from handle-websocket-event!
+java.lang.IllegalArgumentException: No implementation of method: :send-msg of protocol: #'gniazdo.core/Client found for class: nil
+	at clojure.core$_cache_protocol_fn.invokeStatic(core_deftype.clj:583)
+	at gniazdo.core$fn__3179$G__3172__3186.invoke(core.clj:37)
+	at discljord.connections$eval416$fn__418.doInvoke(connections.clj:158)
+	at clojure.lang.RestFn.invoke(RestFn.java:490)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:251)
+	at clojure.lang.AFn.applyToHelper(AFn.java:171)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:659)
+	at clojure.core$apply.invoke(core.clj:652)
+	at discljord.connections$start_event_loop_BANG_$fn__728$state_machine__8464__auto____735$fn__738.invoke(connections.clj:345)
+	at discljord.connections$start_event_loop_BANG_$fn__728$state_machine__8464__auto____735.invoke(connections.clj:345)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__8482.invoke(ioc_macros.clj:984)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__3539$fn__3540.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-03 17:30:47.415 | FATAL | async-thread-macro-4 | alexis-texas.core | Disconnecting from Discord.
+2018-10-03 17:30:47.457 | DEBUG | async-dispatch-8 | discljord.connections | Shard disconnected from Discord
+2018-10-03 17:30:47.457 | DEBUG | async-dispatch-8 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-03 17:31:14.921 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 17:31:15.492 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 17:31:18.817 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-03 17:31:18.856 | DEBUG | async-dispatch-3 | discljord.connections | Shard disconnected from Discord
+2018-10-03 17:31:18.857 | DEBUG | async-dispatch-3 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-03 17:51:33.926 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 17:51:34.218 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 17:58:38.101 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 17:58:38.398 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 18:01:21.742 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-03 18:01:21.797 | DEBUG | async-dispatch-7 | discljord.connections | Shard disconnected from Discord
+2018-10-03 18:01:21.797 | DEBUG | async-dispatch-7 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-03 18:04:10.463 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 18:04:10.837 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 18:50:01.543 | DEBUG | async-dispatch-5 | discljord.connections | Shard disconnected from Discord
+2018-10-03 18:50:01.544 | DEBUG | async-dispatch-5 | discljord.connections | Stop code 1006 encountered with message:
+	WebSocket Read EOF
+2018-10-03 18:50:01.544 | DEBUG | async-dispatch-5 | discljord.connections | Reconnecting
+2018-10-03 18:50:01.545 | DEBUG | async-dispatch-5 | discljord.connections | Connecting shard [0 1]
+2018-10-03 18:50:01.755 | TRACE | async-thread-macro-4 | discljord.connections | Successfully connected to Discord
+2018-10-03 18:50:01.757 | ERROR | async-dispatch-3 | discljord.connections | Exception caught from handle-websocket-event!
+org.eclipse.jetty.websocket.api.WebSocketException: RemoteEndpoint unavailable, current state [CLOSED], expecting [OPEN or CONNECTED]
+	at org.eclipse.jetty.websocket.common.WebSocketSession.getRemote(WebSocketSession.java:299)
+	at gniazdo.core$connect_with_client$reify__3234.send_msg(core.clj:138)
+	at discljord.connections$eval416$fn__418.doInvoke(connections.clj:159)
+	at clojure.lang.RestFn.invoke(RestFn.java:490)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:251)
+	at clojure.lang.AFn.applyToHelper(AFn.java:171)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:659)
+	at clojure.core$apply.invoke(core.clj:652)
+	at discljord.connections$start_event_loop_BANG_$fn__728$state_machine__8464__auto____735$fn__738.invoke(connections.clj:345)
+	at discljord.connections$start_event_loop_BANG_$fn__728$state_machine__8464__auto____735.invoke(connections.clj:345)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__8482.invoke(ioc_macros.clj:984)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__3539$fn__3540.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-03 18:50:48.363 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 18:50:48.639 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 20:20:22.211 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 20:20:22.497 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 21:11:29.161 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-03 21:11:29.457 | TRACE | async-thread-macro-3 | discljord.connections | Successfully connected to Discord
+2018-10-03 22:16:12.344 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-03 22:16:12.395 | DEBUG | async-dispatch-1 | discljord.connections | Shard disconnected from Discord
+2018-10-03 22:16:12.395 | DEBUG | async-dispatch-1 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-23 03:32:32.661 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-23 03:32:32.965 | TRACE | async-thread-macro-2 | discljord.connections | Successfully connected to Discord
+2018-10-23 03:32:45.706 | ERROR | async-thread-macro-2 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1429$state_machine__9952__auto____1434$fn__1438$inst_1289__1449.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:32:57.328 | ERROR | async-thread-macro-2 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1429$state_machine__9952__auto____1434$fn__1438$inst_1289__1449.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:33:04.637 | ERROR | async-dispatch-1 | discljord.connections | Exception in handle-command!
+clojure.lang.ArityException: Wrong number of args (3) passed to: connections/eval810/fn--811
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:448)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.lang.AFn.applyToHelper(AFn.java:160)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:661)
+	at clojure.core$apply.invoke(core.clj:652)
+	at discljord.connections$start_communication_loop_BANG_$fn__926$state_machine__9952__auto____933$fn__936.invoke(connections.clj:456)
+	at discljord.connections$start_communication_loop_BANG_$fn__926$state_machine__9952__auto____933.invoke(connections.clj:456)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__9970.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__5027$fn__5028.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:35:49.981 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-23 03:35:50.232 | TRACE | async-thread-macro-2 | discljord.connections | Successfully connected to Discord
+2018-10-23 03:36:08.365 | ERROR | async-thread-macro-2 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1434$state_machine__9952__auto____1439$fn__1443$inst_1294__1454.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:36:17.268 | ERROR | async-thread-macro-2 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1434$state_machine__9952__auto____1439$fn__1443$inst_1294__1454.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:36:28.629 | ERROR | async-thread-macro-2 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1434$state_machine__9952__auto____1439$fn__1443$inst_1294__1454.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:36:28.630 | ERROR | async-dispatch-1 | discljord.connections | Exception in handle-command!
+java.lang.ClassCastException: clojure.lang.LazySeq cannot be cast to java.base/java.util.concurrent.Future
+	at clojure.core$deref_future.invokeStatic(core.clj:2290)
+	at clojure.core$deref.invokeStatic(core.clj:2312)
+	at clojure.core$deref.invoke(core.clj:2298)
+	at discljord.connections$eval821$fn__822.doInvoke(connections.clj:430)
+	at clojure.lang.RestFn.invoke(RestFn.java:470)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:243)
+	at clojure.lang.AFn.applyToHelper(AFn.java:165)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:663)
+	at clojure.core$apply.invoke(core.clj:652)
+	at discljord.connections$start_communication_loop_BANG_$fn__929$state_machine__9952__auto____938$fn__941.invoke(connections.clj:456)
+	at discljord.connections$start_communication_loop_BANG_$fn__929$state_machine__9952__auto____938.invoke(connections.clj:456)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__9970.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__5027$fn__5028.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:36:28.630 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 03:40:12.379 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-23 03:40:12.642 | TRACE | async-thread-macro-2 | discljord.connections | Successfully connected to Discord
+2018-10-23 03:40:21.893 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 03:40:21.899 | ERROR | async-thread-macro-2 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1433$state_machine__9952__auto____1438$fn__1442$inst_1293__1453.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:40:21.936 | DEBUG | async-dispatch-7 | discljord.connections | Shard disconnected from Discord
+2018-10-23 03:40:21.936 | DEBUG | async-dispatch-7 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-23 03:40:32.386 | DEBUG | async-thread-macro-1 | discljord.connections | Connecting shard [0 1]
+2018-10-23 03:40:32.574 | TRACE | async-thread-macro-1 | discljord.connections | Successfully connected to Discord
+2018-10-23 03:40:36.328 | ERROR | async-thread-macro-1 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1433$state_machine__9952__auto____1438$fn__1442$inst_1293__1453.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:43:39.160 | FATAL | async-thread-macro-2 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 03:43:39.161 | ERROR | async-thread-macro-3 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No method in multimethod 'dispatch-http' for dispatch value: null
+	at clojure.lang.MultiFn.getFn(MultiFn.java:156)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1433$state_machine__9952__auto____1438$fn__1442$inst_1293__1453.invoke(impl.clj:143)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:43:39.203 | DEBUG | async-dispatch-7 | discljord.connections | Shard disconnected from Discord
+2018-10-23 03:43:39.203 | DEBUG | async-dispatch-7 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-23 03:44:02.879 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-23 03:44:03.144 | TRACE | async-thread-macro-2 | discljord.connections | Successfully connected to Discord
+2018-10-23 03:45:48.544 | DEBUG | async-dispatch-2 | discljord.connections | Shard disconnected from Discord
+2018-10-23 03:45:48.545 | DEBUG | async-dispatch-2 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-23 03:45:48.652 | ERROR | async-dispatch-4 | discljord.connections | Exception in handle-command!
+java.lang.NullPointerException
+	at clojure.lang.Numbers.ops(Numbers.java:1018)
+	at clojure.lang.Numbers.isPos(Numbers.java:96)
+	at clojure.lang.Range.create(Range.java:80)
+	at clojure.core$range.invokeStatic(core.clj:3023)
+	at clojure.core$range.invoke(core.clj:3011)
+	at discljord.connections$connect_shards_BANG_.invokeStatic(connections.clj:399)
+	at discljord.connections$connect_shards_BANG_.doInvoke(connections.clj:392)
+	at clojure.lang.RestFn.invoke(RestFn.java:587)
+	at discljord.connections$eval846$fn__848.doInvoke(connections.clj:449)
+	at clojure.lang.RestFn.invoke(RestFn.java:470)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:243)
+	at clojure.lang.AFn.applyToHelper(AFn.java:165)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:663)
+	at clojure.core$apply.invoke(core.clj:652)
+	at discljord.connections$start_communication_loop_BANG_$fn__928$state_machine__9952__auto____937$fn__940.invoke(connections.clj:456)
+	at discljord.connections$start_communication_loop_BANG_$fn__928$state_machine__9952__auto____937.invoke(connections.clj:456)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__9970.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__5027$fn__5028.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 03:51:26.128 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-23 03:51:26.394 | TRACE | async-thread-macro-2 | discljord.connections | Successfully connected to Discord
+2018-10-23 03:51:40.718 | DEBUG | async-dispatch-3 | discljord.connections | Shard disconnected from Discord
+2018-10-23 03:51:40.719 | DEBUG | async-dispatch-3 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-23 03:51:40.742 | DEBUG | async-thread-macro-2 | discljord.connections | Connecting shard [0 1]
+2018-10-23 03:51:40.922 | TRACE | async-thread-macro-2 | discljord.connections | Successfully connected to Discord
+2018-10-23 03:51:53.648 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 03:51:53.692 | DEBUG | async-dispatch-1 | discljord.connections | Shard disconnected from Discord
+2018-10-23 03:51:53.692 | DEBUG | async-dispatch-1 | discljord.connections | Stop code 1000 encountered with message:
+	
+2018-10-23 04:00:15.565 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-10-23 04:00:15.833 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-10-23 04:00:27.431 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 04:00:27.476 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-10-23 04:00:27.476 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-10-23 15:59:40.550 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-10-23 15:59:40.851 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-10-23 16:03:49.679 | ERROR | async-thread-macro-3 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.NullPointerException
+	at clojure.core$deliver.invokeStatic(core.clj:7052)
+	at clojure.core$deliver.invoke(core.clj:7047)
+	at discljord.messaging.impl$eval1258$fn__1260.invoke(impl.clj:69)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1503$state_machine__9952__auto____1508$fn__1512$inst_1363__1523.invoke(impl.clj:159)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 16:04:42.916 | ERROR | async-thread-macro-3 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.NullPointerException
+	at clojure.core$deliver.invokeStatic(core.clj:7052)
+	at clojure.core$deliver.invoke(core.clj:7047)
+	at discljord.messaging.impl$eval1258$fn__1260.invoke(impl.clj:69)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1503$state_machine__9952__auto____1508$fn__1512$inst_1363__1523.invoke(impl.clj:159)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 16:07:08.618 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 16:07:08.662 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-10-23 16:07:08.676 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-10-23 16:09:44.230 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-10-23 16:09:44.520 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-10-23 16:09:56.554 | ERROR | async-thread-macro-2 | discljord.messaging.impl | Exception in dispatch-http
+java.lang.IllegalArgumentException: No value supplied for key: null
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at discljord.messaging.impl$eval1258$fn__1260.invoke(impl.clj:58)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at discljord.messaging.impl$start_BANG_$fn__1503$state_machine__9952__auto____1508$fn__1512$inst_1363__1523.invoke(impl.clj:159)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 16:11:18.788 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 16:11:18.835 | DEBUG | async-dispatch-8 | discljord.connections.impl | Shard disconnected from Discord
+2018-10-23 16:11:18.835 | DEBUG | async-dispatch-8 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-10-23 16:11:35.324 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-10-23 16:11:35.619 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-10-23 16:21:38.945 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 16:21:38.992 | DEBUG | async-dispatch-5 | discljord.connections.impl | Shard disconnected from Discord
+2018-10-23 16:21:38.993 | DEBUG | async-dispatch-5 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-10-23 16:22:06.553 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-10-23 16:22:06.833 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-10-23 16:42:36.907 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 16:42:36.949 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-10-23 16:42:36.949 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-10-23 16:43:01.486 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-10-23 16:43:01.748 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-10-23 17:09:06.837 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+java.lang.RuntimeException: No dispatch macro for: "
+	at clojure.lang.Util.runtimeException(Util.java:221)
+	at clojure.lang.EdnReader$DispatchReader.invoke(EdnReader.java:552)
+	at clojure.lang.EdnReader.read(EdnReader.java:145)
+	at clojure.lang.EdnReader.read(EdnReader.java:111)
+	at clojure.lang.EdnReader.readString(EdnReader.java:67)
+	at clojure.edn$read_string.invokeStatic(edn.clj:46)
+	at clojure.edn$read_string.invokeStatic(edn.clj:37)
+	at clojure.edn$read_string.invoke(edn.clj:37)
+	at alexis_texas.core$eval9363$fn__9365.invoke(form-init1736432296060887232.clj:191)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:245)
+	at alexis_texas.core$_main.invoke(core.clj:223)
+	at alexis_texas.core$start_bot_BANG_$fn__8925.invoke(core.clj:249)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 17:35:37.081 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+java.lang.ClassCastException: java.base/java.lang.String cannot be cast to java.base/java.lang.Number
+	at clojure.lang.Numbers.inc(Numbers.java:112)
+	at com.rpl.specter.navs$do_keypath_transform.invokeStatic(navs.cljc:633)
+	at com.rpl.specter.navs$do_keypath_transform.invoke(navs.cljc:629)
+	at com.rpl.specter.navs$fn$reify__3287.transform_STAR_(navs.cljc:645)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100$fn__2106.invoke(impl.cljc:202)
+	at com.rpl.specter.navs$do_keypath_transform.invokeStatic(navs.cljc:630)
+	at com.rpl.specter.navs$do_keypath_transform.invoke(navs.cljc:629)
+	at com.rpl.specter.navs$fn$reify__3287.transform_STAR_(navs.cljc:645)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100.transform_STAR_(impl.cljc:200)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100$fn__2106.invoke(impl.cljc:202)
+	at com.rpl.specter.navs$do_keypath_transform.invokeStatic(navs.cljc:630)
+	at com.rpl.specter.navs$do_keypath_transform.invoke(navs.cljc:629)
+	at com.rpl.specter.navs$fn$reify__3287.transform_STAR_(navs.cljc:645)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100.transform_STAR_(impl.cljc:200)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100$fn__2106.invoke(impl.cljc:202)
+	at com.rpl.specter.navs$do_keypath_transform.invokeStatic(navs.cljc:630)
+	at com.rpl.specter.navs$do_keypath_transform.invoke(navs.cljc:629)
+	at com.rpl.specter.navs$fn$reify__3287.transform_STAR_(navs.cljc:645)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100$fn__2106.invoke(impl.cljc:202)
+	at com.rpl.specter$reify__3827$next_fn__3830.invoke(specter.cljc:1081)
+	at clojure.lang.Atom.swap(Atom.java:37)
+	at clojure.core$swap_BANG_.invokeStatic(core.clj:2344)
+	at clojure.core$swap_BANG_.invoke(core.clj:2337)
+	at com.rpl.specter$reify__3827.transform_STAR_(specter.cljc:1089)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100.transform_STAR_(impl.cljc:200)
+	at com.rpl.specter.impl$combine_two_navs$reify__2100.transform_STAR_(impl.cljc:200)
+	at com.rpl.specter.impl$compiled_transform_STAR_.invokeStatic(impl.cljc:411)
+	at com.rpl.specter.impl$compiled_transform_STAR_.invoke(impl.cljc:410)
+	at com.rpl.specter.impl$compiled_setval_STAR_.invokeStatic(impl.cljc:945)
+	at com.rpl.specter.impl$compiled_setval_STAR_.invoke(impl.cljc:944)
+	at alexis_texas.core$eval11650$fn__11652.invoke(form-init1736432296060887232.clj:218)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:245)
+	at alexis_texas.core$_main.invoke(core.clj:223)
+	at alexis_texas.core$start_bot_BANG_$fn__8925.invoke(core.clj:249)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-10-23 17:49:10.388 | FATAL | async-thread-macro-1 | alexis-texas.core | Disconnecting from Discord.
+2018-10-23 17:49:10.436 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-10-23 17:49:10.437 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-06 13:27:42.837 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-06 13:27:43.260 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-06 13:29:24.764 | FATAL | async-thread-macro-1 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-06 13:29:24.823 | DEBUG | async-dispatch-7 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-06 13:29:24.824 | DEBUG | async-dispatch-7 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-06 13:29:28.621 | DEBUG | async-thread-macro-1 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-06 13:29:28.806 | TRACE | async-thread-macro-1 | discljord.connections.impl | Successfully connected to Discord
+2018-11-06 13:58:14.306 | FATAL | async-thread-macro-3 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-06 13:58:14.432 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-06 13:58:14.432 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 02:32:56.553 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 02:32:56.860 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 02:37:37.078 | FATAL | async-thread-macro-1 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 02:37:37.127 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 02:37:37.128 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 02:37:39.256 | DEBUG | async-thread-macro-1 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 02:37:39.450 | TRACE | async-thread-macro-1 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 02:38:43.692 | FATAL | async-thread-macro-3 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 02:38:43.735 | DEBUG | async-dispatch-3 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 02:38:43.736 | DEBUG | async-dispatch-3 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 02:38:46.149 | DEBUG | async-thread-macro-4 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 02:38:46.310 | TRACE | async-thread-macro-4 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 02:39:38.242 | FATAL | async-thread-macro-3 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 02:39:38.293 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 02:39:38.293 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 02:39:40.823 | DEBUG | async-thread-macro-4 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 02:39:41.001 | TRACE | async-thread-macro-4 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 03:11:02.104 | FATAL | async-thread-macro-3 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 03:11:02.147 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 03:11:02.148 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 03:13:12.564 | DEBUG | async-thread-macro-7 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 03:13:12.781 | TRACE | async-thread-macro-7 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 03:30:26.446 | FATAL | async-thread-macro-6 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 03:30:26.488 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 03:30:26.489 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 03:49:07.086 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 03:49:07.348 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 03:52:06.586 | FATAL | async-thread-macro-1 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 03:52:06.633 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 03:52:06.634 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 03:53:28.221 | DEBUG | async-thread-macro-5 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 03:53:28.438 | TRACE | async-thread-macro-5 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 04:04:30.184 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 04:04:30.461 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 04:05:09.987 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-and
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval9958$fn__9960.invoke(commands.clj:111)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__7775.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 04:18:19.986 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval9958$fn__9960.invoke(commands.clj:111)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__7775.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 04:22:03.783 | FATAL | async-thread-macro-1 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 04:22:03.827 | DEBUG | async-dispatch-6 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 04:22:03.828 | DEBUG | async-dispatch-6 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 04:42:19.010 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 04:42:19.254 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 04:42:26.214 | FATAL | async-thread-macro-1 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 04:42:26.260 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 04:42:26.261 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 04:42:46.060 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 04:42:46.252 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 04:42:59.467 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval9671$fn__9673.invoke(commands.clj:111)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 04:45:13.428 | FATAL | async-thread-macro-1 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 04:45:13.467 | DEBUG | async-dispatch-8 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 04:45:13.468 | DEBUG | async-dispatch-8 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-08 04:59:30.230 | DEBUG | async-thread-macro-6 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 04:59:30.431 | TRACE | async-thread-macro-6 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 05:00:22.197 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10340$fn__10342.invoke(commands.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:00:27.150 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10340$fn__10342.invoke(commands.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:01:22.690 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10340$fn__10342.invoke(commands.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:01:27.621 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10340$fn__10342.invoke(commands.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:01:31.145 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10340$fn__10342.invoke(commands.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:01:57.246 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10340$fn__10342.invoke(commands.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:02:56.596 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10644$fn__10646.invoke(form-init4869558856323808071.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:03:08.062 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10644$fn__10646.invoke(form-init4869558856323808071.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:03:44.049 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval10644$fn__10646.invoke(form-init4869558856323808071.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:06:36.886 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval12323$fn__12325.invoke(commands.clj:64)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:08:23.478 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval12670$fn__12672.invoke(commands.clj:150)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:08:34.475 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval12670$fn__12672.invoke(commands.clj:150)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:10:15.369 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: core/bit-or
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.RestFn.invoke(RestFn.java:412)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$apply.invoke(core.clj:652)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invokeStatic(permissions.clj:55)
+	at alexis_texas.permissions$user_has_permission_QMARK_.invoke(permissions.clj:48)
+	at alexis_texas.commands$eval13783$fn__13785.invoke(commands.clj:151)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:13:18.723 | ERROR | async-thread-macro-5 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (3) passed to: commands/display-help-message
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:40)
+	at alexis_texas.commands$eval14941$fn__14943.invoke(commands.clj:139)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:233)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$_main.invokeStatic(core.clj:49)
+	at alexis_texas.core$_main.invoke(core.clj:24)
+	at alexis_texas.core$start_bot_BANG_$fn__10026.invoke(core.clj:53)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-08 05:24:46.570 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-08 05:24:46.825 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-08 05:26:41.352 | FATAL | async-thread-macro-1 | alexis-texas.commands | Disconnecting from Discord.
+2018-11-08 05:26:41.396 | DEBUG | async-dispatch-7 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-08 05:26:41.397 | DEBUG | async-dispatch-7 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-28 16:54:38.564 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-28 16:54:38.862 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-28 16:54:52.555 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: events/disconnect-bot
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:32)
+	at alexis_texas.core$handler$fn__12180.invoke(core.clj:29)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$run_bot.invokeStatic(core.clj:71)
+	at alexis_texas.core$run_bot.invoke(core.clj:47)
+	at alexis_texas.core$start_bot_BANG_$fn__12263.invoke(core.clj:81)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-28 16:54:52.602 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-28 16:54:52.603 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-11-28 17:22:02.632 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-11-28 17:22:02.941 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-11-28 19:14:48.364 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: events/disconnect-bot
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:32)
+	at alexis_texas.core$handler$fn__7790.invoke(core.clj:29)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$run_bot.invokeStatic(core.clj:71)
+	at alexis_texas.core$run_bot.invoke(core.clj:47)
+	at alexis_texas.core$start_bot_BANG_$fn__7873.invoke(core.clj:81)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-11-28 19:14:48.407 | DEBUG | async-dispatch-6 | discljord.connections.impl | Shard disconnected from Discord
+2018-11-28 19:14:48.408 | DEBUG | async-dispatch-6 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-20 16:03:11.574 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-20 16:03:11.953 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-12-20 17:04:23.369 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-20 17:04:23.371 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1006 encountered with message:
+	WebSocket Read EOF
+2018-12-20 17:04:23.371 | DEBUG | async-dispatch-1 | discljord.connections.impl | Reconnecting
+2018-12-20 17:04:23.372 | DEBUG | async-dispatch-1 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-20 17:04:23.584 | TRACE | async-dispatch-1 | discljord.connections.impl | Successfully connected to Discord
+2018-12-20 17:05:04.839 | ERROR | async-dispatch-2 | discljord.connections.impl | Unable to send heartbeat
+org.eclipse.jetty.websocket.api.WebSocketException: RemoteEndpoint unavailable, current state [CLOSING], expecting [OPEN or CONNECTED]
+	at org.eclipse.jetty.websocket.common.WebSocketSession.getRemote(WebSocketSession.java:299)
+	at gniazdo.core$connect_with_client$reify__4722.send_msg(core.clj:138)
+	at discljord.connections.impl$reconnect_websocket_BANG_$fn__1457$fn__1458$fn__1461$fn__1470.invoke(impl.clj:106)
+	at discljord.connections.impl$eval1630$fn__1631$fn__1709$state_machine__9952__auto____1728$fn__1731.invoke(impl.clj:298)
+	at discljord.connections.impl$eval1630$fn__1631$fn__1709$state_machine__9952__auto____1728.invoke(impl.clj:298)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__9970.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__5092.invoke(channels.clj:265)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-12-20 17:05:05.509 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-20 17:05:05.510 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-20 17:05:05.511 | DEBUG | async-dispatch-4 | discljord.connections.impl | Reconnecting
+2018-12-20 17:05:05.511 | DEBUG | async-dispatch-4 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-20 17:05:05.787 | TRACE | async-dispatch-4 | discljord.connections.impl | Successfully connected to Discord
+2018-12-20 17:05:46.166 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-20 17:05:46.167 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-20 17:05:46.167 | DEBUG | async-dispatch-1 | discljord.connections.impl | Reconnecting
+2018-12-20 17:05:46.167 | DEBUG | async-dispatch-1 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-20 17:05:46.352 | TRACE | async-dispatch-1 | discljord.connections.impl | Successfully connected to Discord
+2018-12-20 19:19:50.360 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-20 19:19:50.361 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1001 encountered with message:
+	
+2018-12-20 19:19:50.361 | DEBUG | async-dispatch-4 | discljord.connections.impl | Reconnecting
+2018-12-20 19:19:50.362 | DEBUG | async-dispatch-4 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-20 19:19:50.546 | TRACE | async-dispatch-4 | discljord.connections.impl | Successfully connected to Discord
+2018-12-20 19:20:31.624 | DEBUG | async-dispatch-2 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-20 19:20:31.624 | DEBUG | async-dispatch-2 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-20 19:20:31.625 | DEBUG | async-dispatch-2 | discljord.connections.impl | Reconnecting
+2018-12-20 19:20:31.625 | DEBUG | async-dispatch-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-20 19:20:31.811 | TRACE | async-dispatch-2 | discljord.connections.impl | Successfully connected to Discord
+2018-12-28 15:03:47.675 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-28 15:03:48.030 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-12-28 18:01:37.219 | DEBUG | async-dispatch-6 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-28 18:01:37.222 | DEBUG | async-dispatch-6 | discljord.connections.impl | Stop code 1006 encountered with message:
+	WebSocket Read EOF
+2018-12-28 18:01:37.222 | DEBUG | async-dispatch-6 | discljord.connections.impl | Reconnecting
+2018-12-28 18:01:37.224 | DEBUG | async-dispatch-6 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-28 18:01:37.471 | TRACE | async-dispatch-6 | discljord.connections.impl | Successfully connected to Discord
+2018-12-28 18:02:10.614 | DEBUG | async-dispatch-7 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-28 18:02:10.615 | DEBUG | async-dispatch-7 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-28 18:02:10.615 | DEBUG | async-dispatch-7 | discljord.connections.impl | Reconnecting
+2018-12-28 18:02:10.615 | DEBUG | async-dispatch-7 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-28 18:02:10.848 | TRACE | async-dispatch-7 | discljord.connections.impl | Successfully connected to Discord
+2018-12-28 18:19:38.117 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: events/disconnect-bot
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:32)
+	at clojure.lang.Var.invoke(Var.java:381)
+	at alexis_texas.core$handler$fn__2523.invoke(core.clj:29)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$run_bot.invokeStatic(core.clj:71)
+	at alexis_texas.core$run_bot.invoke(core.clj:47)
+	at alexis_texas.core$start_bot_BANG_$fn__2606.invoke(core.clj:81)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-12-28 18:19:38.154 | DEBUG | async-dispatch-7 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-28 18:19:38.155 | DEBUG | async-dispatch-7 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-28 18:19:38.155 | DEBUG | async-dispatch-7 | discljord.connections.impl | Reconnecting
+2018-12-28 18:19:38.155 | DEBUG | async-dispatch-7 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-28 18:19:38.329 | TRACE | async-dispatch-7 | discljord.connections.impl | Successfully connected to Discord
+2018-12-28 18:21:03.107 | DEBUG | async-thread-macro-4 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-28 18:21:03.311 | TRACE | async-thread-macro-4 | discljord.connections.impl | Successfully connected to Discord
+2018-12-28 18:21:08.263 | ERROR | nREPL-worker-0 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: events/disconnect-bot
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:32)
+	at clojure.lang.Var.invoke(Var.java:381)
+	at alexis_texas.core$handler$fn__2523.invoke(core.clj:29)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$run_bot.invokeStatic(core.clj:71)
+	at alexis_texas.core$run_bot.invoke(core.clj:47)
+	at alexis_texas.core$eval13197.invokeStatic(form-init13996605311414749567.clj:118)
+	at alexis_texas.core$eval13197.invoke(form-init13996605311414749567.clj:118)
+	at clojure.lang.Compiler.eval(Compiler.java:7062)
+	at clojure.lang.Compiler.eval(Compiler.java:7025)
+	at clojure.core$eval.invokeStatic(core.clj:3206)
+	at clojure.core$eval.invoke(core.clj:3202)
+	at clojure.main$repl$read_eval_print__8572$fn__8575.invoke(main.clj:243)
+	at clojure.main$repl$read_eval_print__8572.invoke(main.clj:243)
+	at clojure.main$repl$fn__8581.invoke(main.clj:261)
+	at clojure.main$repl.invokeStatic(main.clj:261)
+	at clojure.main$repl.doInvoke(main.clj:177)
+	at clojure.lang.RestFn.invoke(RestFn.java:1523)
+	at nrepl.middleware.interruptible_eval$evaluate$fn__3349.invoke(interruptible_eval.clj:83)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:657)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1965)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1965)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:81)
+	at nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:50)
+	at nrepl.middleware.interruptible_eval$interruptible_eval$fn__3392$fn__3395.invoke(interruptible_eval.clj:221)
+	at nrepl.middleware.interruptible_eval$run_next$fn__3387.invoke(interruptible_eval.clj:189)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-12-28 18:21:08.332 | DEBUG | async-dispatch-1 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-28 18:21:08.332 | DEBUG | async-dispatch-1 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-30 14:28:06.418 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-30 14:28:07.172 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2018-12-30 18:33:33.891 | DEBUG | async-dispatch-7 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-30 18:33:33.894 | DEBUG | async-dispatch-7 | discljord.connections.impl | Stop code 1006 encountered with message:
+	WebSocket Read EOF
+2018-12-30 18:33:33.894 | DEBUG | async-dispatch-7 | discljord.connections.impl | Reconnecting
+2018-12-30 18:33:33.895 | DEBUG | async-dispatch-7 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-30 18:33:34.136 | TRACE | async-dispatch-7 | discljord.connections.impl | Successfully connected to Discord
+2018-12-30 18:34:15.097 | DEBUG | async-dispatch-3 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-30 18:34:15.098 | DEBUG | async-dispatch-3 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-30 18:34:15.098 | DEBUG | async-dispatch-3 | discljord.connections.impl | Reconnecting
+2018-12-30 18:34:15.098 | DEBUG | async-dispatch-3 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-30 18:34:15.342 | TRACE | async-dispatch-3 | discljord.connections.impl | Successfully connected to Discord
+2018-12-30 19:32:41.686 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-30 19:32:41.686 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1006 encountered with message:
+	WebSocket Read EOF
+2018-12-30 19:32:41.686 | DEBUG | async-dispatch-4 | discljord.connections.impl | Reconnecting
+2018-12-30 19:32:41.687 | DEBUG | async-dispatch-4 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-30 19:32:42.104 | TRACE | async-dispatch-4 | discljord.connections.impl | Successfully connected to Discord
+2018-12-30 19:33:23.024 | DEBUG | async-dispatch-5 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-30 19:33:23.025 | DEBUG | async-dispatch-5 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2018-12-30 19:33:23.026 | DEBUG | async-dispatch-5 | discljord.connections.impl | Reconnecting
+2018-12-30 19:33:23.026 | DEBUG | async-dispatch-5 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-30 19:33:23.197 | TRACE | async-dispatch-5 | discljord.connections.impl | Successfully connected to Discord
+2018-12-30 21:21:42.404 | ERROR | WebSocketClient@1651519707-scheduler | discljord.connections.impl | Error caught on websocket
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:588)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:168)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:534)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:125)
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillInterestedFailed(SslConnection.java:210)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:125)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:167)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-12-30 21:21:42.408 | DEBUG | async-dispatch-6 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-30 21:21:42.408 | DEBUG | async-dispatch-6 | discljord.connections.impl | Stop code 1001 encountered with message:
+	Idle Timeout
+2018-12-30 21:21:42.408 | DEBUG | async-dispatch-6 | discljord.connections.impl | Reconnecting
+2018-12-30 21:21:42.408 | DEBUG | async-dispatch-6 | discljord.connections.impl | Connecting shard [0 1]
+2018-12-30 21:21:42.652 | TRACE | async-dispatch-6 | discljord.connections.impl | Successfully connected to Discord
+2018-12-31 01:59:03.074 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2018-12-31 01:59:03.074 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1001 encountered with message:
+	Shutdown
+2018-12-31 01:59:03.074 | DEBUG | async-dispatch-4 | discljord.connections.impl | Reconnecting
+2018-12-31 01:59:03.074 | DEBUG | async-dispatch-4 | discljord.connections.impl | Connecting shard [0 1]
+2019-01-04 20:42:26.884 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2019-01-04 20:42:27.236 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2019-01-04 20:44:36.645 | DEBUG | async-dispatch-7 | discljord.connections.impl | Shard disconnected from Discord
+2019-01-04 20:44:36.647 | DEBUG | async-dispatch-7 | discljord.connections.impl | Stop code 1006 encountered with message:
+	WebSocket Read EOF
+2019-01-04 20:44:36.647 | DEBUG | async-dispatch-7 | discljord.connections.impl | Reconnecting
+2019-01-04 20:44:36.648 | DEBUG | async-dispatch-7 | discljord.connections.impl | Connecting shard [0 1]
+2019-01-04 20:44:36.869 | TRACE | async-dispatch-7 | discljord.connections.impl | Successfully connected to Discord
+2019-01-04 20:44:37.735 | ERROR | async-thread-macro-1 | discljord.events | Exception occurred in event handler.
+clojure.lang.ArityException: Wrong number of args (1) passed to: events/disconnect-bot
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:32)
+	at clojure.lang.Var.invoke(Var.java:381)
+	at alexis_texas.core$handler$fn__8409.invoke(core.clj:29)
+	at clojure.lang.Var.invoke(Var.java:385)
+	at discljord.events$message_pump_BANG_$fn__13839.invoke(events.clj:16)
+	at discljord.events$message_pump_BANG_.invokeStatic(events.clj:16)
+	at discljord.events$message_pump_BANG_.invoke(events.clj:6)
+	at alexis_texas.core$run_bot.invokeStatic(core.clj:71)
+	at alexis_texas.core$run_bot.invoke(core.clj:47)
+	at alexis_texas.core$start_bot_BANG_$fn__8492.invoke(core.clj:81)
+	at clojure.core.async$thread_call$fn__10189.invoke(async.clj:441)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-04 20:44:37.772 | DEBUG | async-dispatch-4 | discljord.connections.impl | Shard disconnected from Discord
+2019-01-04 20:44:37.773 | DEBUG | async-dispatch-4 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2019-01-04 20:44:37.773 | DEBUG | async-dispatch-4 | discljord.connections.impl | Reconnecting
+2019-01-04 20:44:37.773 | DEBUG | async-dispatch-4 | discljord.connections.impl | Connecting shard [0 1]
+2019-01-04 20:44:37.939 | TRACE | async-dispatch-4 | discljord.connections.impl | Successfully connected to Discord
+2019-01-04 20:44:42.092 | DEBUG | async-dispatch-1 | discljord.connections.impl | Invalid session sent from Discord, reconnecting
+2019-01-04 20:44:47.394 | DEBUG | async-dispatch-7 | discljord.connections.impl | Shard disconnected from Discord
+2019-01-04 20:44:47.395 | DEBUG | async-dispatch-7 | discljord.connections.impl | Stop code 1000 encountered with message:
+	
+2019-01-04 20:44:47.396 | DEBUG | async-dispatch-7 | discljord.connections.impl | Reconnecting
+2019-01-04 20:44:47.396 | DEBUG | async-dispatch-7 | discljord.connections.impl | Connecting shard [0 1]
+2019-01-04 20:44:47.583 | TRACE | async-dispatch-7 | discljord.connections.impl | Successfully connected to Discord
+2019-01-04 21:35:04.360 | DEBUG | async-thread-macro-2 | discljord.connections.impl | Connecting shard [0 1]
+2019-01-04 21:35:04.644 | TRACE | async-thread-macro-2 | discljord.connections.impl | Successfully connected to Discord
+2019-01-04 22:10:46.196 | DEBUG | async-dispatch-2 | discljord.connections.impl | Shard disconnected from Discord
+2019-01-04 22:10:46.197 | DEBUG | async-dispatch-2 | discljord.connections.impl | Stop code 1001 encountered with message:
+	Shutdown
+2019-01-04 22:10:46.198 | DEBUG | async-dispatch-2 | discljord.connections.impl | Reconnecting
+2019-01-04 22:10:46.199 | DEBUG | async-dispatch-2 | discljord.connections.impl | Connecting shard [0 1]

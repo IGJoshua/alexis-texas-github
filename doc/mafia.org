@@ -1,0 +1,48 @@
+#+TITLE:Mafia Bot Design
+#+AUTHOR:Suskeyhose
+#+OPTIONS: toc:1 num:2
+* Required API Features
+ - Send and recieve messages
+ - Create new DM channels, and send and recieve messages on them
+ - Check permissions of users
+ - Start asynchronous processes to handle time passing
+
+* Features
+** Run Multiple Games at Once in Different Servers
+** Leaderboards
+   When a game finishes, each surviving player will be awarded one point, and players can view the leaderboards which show which players have won the most games, how many games they've won, and how many games they've played. There should be separate monthly and all-time leaderboards.
+   
+   :WORLD_LEADERBOARDS:
+   Also possibly consider making leaderboards that are cross-guild, with the usernames (but not discriminators or user IDs) of other players who have played.
+   :END:
+   
+* Game Flow
+  Illustrates how a typical game will be played, with notes about some possible features and less typical use cases.
+  
+  Currently, all game state is managed internally by the bot, and none of it is visible from discord. Perhaps consider making it so that it will use specific roles that it creates for alive and dead players, which it assigns as necessary to those playing, and then removes all the roles once it's done? If that is how it works though, it'll need to have permissions for creating and modifying roles.
+** Game Start
+   User signals the bot to start a game on their current server in a public channel (perhaps make it so that only certain channels are usable, with the list able to be changed by those with manage-channels permissions). Players will then join the game with a command, until either a join deadline hits, or a player cap is hit, or the user who started the game (or a mod) signals it to start. At that point, all the players who joined are signalled to check in via a DM (with a short timeout, at which point the game will continue without players who missed checkin, or may start over if it has too few players). Once all players are checked in, the game begins and each player is sent their role.
+** Night
+   At night is when everyone operates and uses their powers, so almost everything is done in DM.
+   
+*** Power Targeting
+    The bot signals that the night has begun, and which night it is, and the remaining player count. At this point, each of the players is given one minute to choose another member to use their power on. Once the minute is up, any players who haven't used their powers lose the ability to use them that night, and the game continues.
+*** Power Resolution
+   Next, the system resolves each of the powers which were used that night, and determines which players will be dead the next day. It sends the dead players a notification that they have died, and asks for their last words. After one minute, it collects the last words which have been sent, and uses them at the beginning of the day.
+   
+** Day
+   During the day, the remaining people have to determine who they think the killer was based on the arguments of the participants, and then vote on who to lynch to help stop the killings.
+   
+*** Reveal Power Usage
+    The bot will now reveal which characters have died, and which were /going/ to die, but were saved, and by what they were saved, as well as any other public information about the resolution of the powers from the previous night.
+    This will also show last words, etc. from the victims.
+*** Lynch the Mafia
+    Villagers will nominate the other members as possible mafia members, but after a minute nominations will be closed.
+    
+    After nominations, all villagers will get to vote on which of the nominees they think is the Mafia. In the case of a tie, another vote will be held, but the candidates with the lowest votes will be removed from the competition. Each voting cycle will last one minute.
+    
+    Once the voting is complete and a single candidate is chosen, they will have one minute to write their last words, and then will be summarily hung, and the next night will begin.
+    
+** Endgame
+   Once there are no more mafia, or no more villagers, the game is complete and the bot should display a message with information about how the game went, how many nights the losing team lasted, who was Mafia or other roles, etc.
+   

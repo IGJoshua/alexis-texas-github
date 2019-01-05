@@ -1,0 +1,3 @@
+{:deps {org.suskalo/discljord {:mvn/version "0.1.7-SNAPSHOT"}}
+ :paths ["src" "resources"]
+ :aliases {:java/v10 {:jvm-opts ["--add-modules" "java.xml.bind"]}}}
